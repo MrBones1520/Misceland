@@ -1,0 +1,13 @@
+import msutil.Constant
+model{
+    Venta venta
+}
+
+json {
+    codigo venta.codigo
+    nombre venta.nombre
+    contenido venta.contenido
+    descripcion venta.descripcion
+    precio venta.precio
+    fechaCompra venta.fechaCompra.format(Constant.formatter)
+}

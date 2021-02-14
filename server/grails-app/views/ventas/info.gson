@@ -1,0 +1,9 @@
+model{
+    List<Venta> ventas = Venta.list()
+}
+
+json {
+    count ventas.size()
+    fechas ventas*.fechaCompra.unique()
+    ventas tmpl.venta(ventas)
+}

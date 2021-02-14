@@ -1,0 +1,15 @@
+model {
+    Producto producto
+}
+
+json {
+    key producto.codigo
+    codigo producto.codigo
+    nombre producto.nombre
+    contenido producto.contenido
+    descripcion producto.descripcion
+    categoria g.render(producto.categoria)
+    precio producto.precio
+    creado producto.dateCreated
+    actualizado producto.lastUpdated
+}

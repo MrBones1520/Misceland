@@ -1,0 +1,38 @@
+.gradle
+gradlew.bat
+gradlew
+gradle/
+**.idea
+
+build/
+
+server/Thumbs.db
+server/.DS_Store
+server/build/
+server/out/
+server/*.iml
+server/*.ipr
+server/*.iws
+server/.project
+server/.settings
+server/.classpath
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+client/node_modules
+
+# testing
+client/coverage
+
+# production
+client/build
+client/yarn.lock
+client/package-lock.json
+
+# misc
+client/.DS_Store
+client/.env
+client/npm-debug.log
+
+docker-compose.yml

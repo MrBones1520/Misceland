@@ -1,0 +1,14 @@
+plugins {
+    id 'com.palantir.docker-compose' version '0.25.0'
+}
+
+wrapper {
+    gradleVersion '6.7'
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+dockerCompose {
+    template 'infra.yml'
+    dockerComposeFile 'docker-compose.yml'
+}
+
